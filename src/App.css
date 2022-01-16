@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.App{
+  height: 100vh;
+}
+
+.phone_book{
+  width: 400px;
+  position: relative;
+  height: 100vh;
+  /* padding: 20px;*/
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border: thin solid gray;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+  
+}
+.phone_book::-webkit-scrollbar {
+  display: none;
+}
+
+.phone_book .navigationToggle{
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
