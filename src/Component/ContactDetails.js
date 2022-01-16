@@ -1,7 +1,8 @@
 import React from 'react'
 import Avatar from '@mui/material/Avatar';
-import { Rating } from '@mui/material';
 import AddFavorite from './AddFavorite';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import DeleteContact from './DeleteContact';
 
 function stringToColor(string) {
     let hash = 0;
@@ -41,7 +42,8 @@ function ContactDetails({firstname, lastname, number, isFav, index}) {
                     <div style={{color:"grey"}}>{number}</div>   
                 </div>
             </div>
-            <div>
+            <div style={{display:"flex", justifyContent:"space-around", alignItems:"center"}}>
+            <DeleteContact userId={index}/>
             <AddFavorite isFav={isFav} userId={index}/>
             </div>
         </div>

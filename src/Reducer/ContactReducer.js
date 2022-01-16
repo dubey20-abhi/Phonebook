@@ -16,6 +16,14 @@ const ContactReducer = (state=[
                 return contact;
             })
             return [...temp];
+
+        case 'Delete_Contact':
+            const tempContact = [...state]
+            console.log(action.payload);
+            tempContact.filter((contact,index)=>{
+                return index != action.payload;
+            })
+            return [...tempContact];
         
         default:
             return state;
