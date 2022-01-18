@@ -11,8 +11,8 @@ function DeleteContact({userId}) {
     return (
         <div>
             <IconButton aria-label="delete" onClick={()=>{deleteContact()}}>
-        <DeleteIcon />
-      </IconButton>
+                <DeleteIcon />
+            </IconButton>
         </div>
     )
 }

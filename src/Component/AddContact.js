@@ -92,7 +92,7 @@ function AddContact() {
 
     return (
         <div>
-            <AddIcon style={styles.addButton}  onClick={handleOpen}/>
+            <AddIcon   onClick={handleOpen}/>
             <Modal
                 open={open}
                 aria-labelledby="modal-modal-title"

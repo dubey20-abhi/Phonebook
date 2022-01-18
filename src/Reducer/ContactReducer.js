@@ -8,7 +8,7 @@ const ContactReducer = (state=[
             return [...state, action.payload];
 
         case 'Toggle_Fav':
-            const temp = [...state]
+            const temp = [...state];
             temp.map((contact,index)=>{
                 if(index == action.payload){
                     contact.isFav = (contact.isFav+1)%2;
@@ -18,12 +18,14 @@ const ContactReducer = (state=[
             return [...temp];
 
         case 'Delete_Contact':
-            const tempContact = [...state]
-            console.log(action.payload);
-            tempContact.filter((contact,index)=>{
+            const tempContact = [...state];
+            const temp2 = tempContact.filter((contact,index)=>{
+                console.log(index);
                 return index != action.payload;
             })
-            return [...tempContact];
+            console.log(temp2);
+            return [...temp2];
+
         
         default:
             return state;

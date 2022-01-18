@@ -8,7 +8,7 @@ function Favorites() {
         <div>
             {
                 contactList.map((contact,index)=>{
-                   return contact.isFav == 1 && <ContactDetails {...{...contact,index : index}}/>
+                   return contact.isFav == 1 && <ContactDetails {...{...contact,index : index}} key={index}/>
                     
                 })
             }

@@ -1,7 +1,6 @@
 import React from 'react'
 import Avatar from '@mui/material/Avatar';
 import AddFavorite from './AddFavorite';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import DeleteContact from './DeleteContact';
 
 function stringToColor(string) {
@@ -34,7 +33,7 @@ function stringToColor(string) {
 function ContactDetails({firstname, lastname, number, isFav, index}) {
 
     return (
-        <div style={{display:"flex", justifyContent:"space-between", marginTop:"15px", alignItems:"center"}}>
+        <div style={{display:"flex", justifyContent:"space-between", marginTop:"10px", alignItems:"center"}}>
             <div style={{display:"flex", justifyContent:"space-between"}}>
                 <Avatar {...stringAvatar(`${firstname} ${lastname}`)} />
                 <div style={{paddingLeft:"20px"}}>
